@@ -1,3 +1,14 @@
+# � Напишите программу на Python, которая будет находить
+# сумму элементов массива из 1000000 целых чисел.
+# � Пример массива: arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ...]
+# � Массив должен быть заполнен случайными целыми числами
+# от 1 до 100.
+# � При решении задачи нужно использовать многопоточность,
+# многопроцессорность и асинхронность.
+# � В каждом решении нужно вывести время выполнения
+# вычислений.
+
+
 import multiprocessing
 from random import randint
 import time
@@ -33,4 +44,4 @@ if __name__ == '__main__':
     start_time = time.time()
     arr = [randint(1, 100) for i in range(arr_length)]
     all_proc_calculation()
-    print(f'Completed download in {time.time()- start_time} seconds.')
+    print(f'Completed in {time.time()- start_time} seconds.')
